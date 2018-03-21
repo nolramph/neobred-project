@@ -1,0 +1,148 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include default-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  @include verdana-custom;
+}
+
+section {
+  padding: 30px 0;
+  h2.fold-section {
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: $primary;
+  }
+  .fold-content{
+    margin: 25px 0px;
+  }
+}
+
+ul.social-buttons{
+  .fb-bg{
+    background-color: $fb-color;
+  }
+  .twitter-bg{
+    background-color: $twitter-color;
+  }
+  .linkedn-bg{
+    background-color: $linkedn-color;
+  }
+}
+
+// Button Styles
+.btn {
+  @include heading-font;
+  font-weight: 700;
+  color: $primary;
+  border-radius: 12px;
+  font-size: 24px;
+  padding: 10px;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: lighten($primary, 10%) !important;
+    border-color: lighten($primary, 10%) !important;
+    color: $white; 
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(46, 15, 11, 0.5) !important;
+  }
+}
+
+.custom-btn-w{
+  margin-bottom: 15px;
+}
+
+.btn-white {
+  background-color: $white;
+  border-color: $white;
+  @include w-100;
+}
+
+.btn-red{
+  background-color: $primary;
+  border-color: $primary;
+  color : $white;
+  &:hover {
+    background-color: lighten($white, 10%) !important;
+    border-color: lighten($primary, 10%) !important;
+    color: $primary; 
+  }
+  @include w-100;
+}
+button#talkToUsBtn{
+  @include w-100;
+  border-radius: 0;
+  border-color: $white;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: lighten($black, 10%) !important;
+    border-color: lighten($white, 10%) !important;
+    color: $white; 
+  } 
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255, 255, 255) !important;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+@media(min-width:992px){
+  section {
+    padding: 50px 0;
+    h2.fold-section {
+      font-size: 1.75rem;
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: $primary;
+    }
+  }
+  .custom-w100{
+    @include w-50;
+  }
+}

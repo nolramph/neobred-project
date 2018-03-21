@@ -1,0 +1,426 @@
+body {
+  overflow-x: hidden;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: #6C1E1E;
+}
+
+a:hover {
+  color: #441313;
+}
+
+.text-primary {
+  color: #6C1E1E !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+section {
+  padding: 30px 0;
+}
+
+section h2.fold-section {
+  font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #6C1E1E;
+}
+
+section .fold-content {
+  margin: 25px 0px;
+}
+
+ul.social-buttons .fb-bg {
+  background-color: #475993;
+}
+
+ul.social-buttons .twitter-bg {
+  background-color: #76a9ea;
+}
+
+ul.social-buttons .linkedn-bg {
+  background-color: #0077b7;
+}
+
+.btn {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #6C1E1E;
+  border-radius: 12px;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.btn:active, .btn:focus, .btn:hover {
+  background-color: #942929 !important;
+  border-color: #942929 !important;
+  color: #fff;
+}
+
+.btn:active, .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(46, 15, 11, 0.5) !important;
+}
+
+.custom-btn-w {
+  margin-bottom: 15px;
+}
+
+.btn-white {
+  background-color: #fff;
+  border-color: #fff;
+  width: 100%;
+}
+
+.btn-red {
+  background-color: #6C1E1E;
+  border-color: #6C1E1E;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-red:hover {
+  background-color: white !important;
+  border-color: #942929 !important;
+  color: #6C1E1E;
+}
+
+button#talkToUsBtn {
+  width: 100%;
+  border-radius: 0;
+  border-color: #fff;
+}
+
+button#talkToUsBtn:active, button#talkToUsBtn:focus, button#talkToUsBtn:hover {
+  background-color: #1a1a1a !important;
+  border-color: white !important;
+  color: #fff;
+}
+
+button#talkToUsBtn:active, button#talkToUsBtn:focus {
+  box-shadow: 0 0 0 0.2rem white !important;
+}
+
+::-moz-selection {
+  background: #6C1E1E;
+  text-shadow: none;
+}
+
+::selection {
+  background: #6C1E1E;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+@media (min-width: 992px) {
+  section {
+    padding: 50px 0;
+  }
+  section h2.fold-section {
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #6C1E1E;
+  }
+  .custom-w100 {
+    width: 50%;
+  }
+}
+
+#mainNav {
+  background-color: #bc3434;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #6C1E1E;
+  border: 0;
+  background-color: #fff;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mainNav .navbar-brand {
+  color: #6C1E1E;
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #441313;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #000;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #bc3434;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+
+header.foldhead {
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.foldhead .foldhead-container {
+  margin-top: 120px;
+  margin-bottom: 45px;
+}
+
+header.foldhead .foldhead-overlay {
+  position: relative;
+  padding: 20px;
+}
+
+header.foldhead .foldhead-overlay:before {
+  background: #000;
+  opacity: 0.5;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+header.foldhead .foldhead-overlay > * {
+  position: relative;
+  z-index: 1;
+}
+
+header.foldhead .foldhead-overlay .foldhead-title {
+  font-size: 1.75rem;
+  line-height: 30px;
+  margin-bottom: 25px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header.foldhead .foldhead-overlay .foldhead-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+header.foldhead .foldhead-overlay .foldhead-content {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  header.foldhead {
+    text-align: left;
+  }
+  header.foldhead .foldhead-overlay .foldhead-title {
+    margin-bottom: 25px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  }
+  header.foldhead .foldhead-overlay .foldhead-heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer span.copyright {
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+footer ul.quicklinks {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #6C1E1E;
+}
+
+section#fold2-content {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url("../images/bg_motor.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  position: relative;
+}
+
+section#fold2-content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background: #fff;
+  opacity: 0.6;
+}
+
+section#fold2-content > * {
+  position: relative;
+  z-index: 1;
+}
+
+section.jumbotron {
+  border-radius: 0;
+  background-color: #373737;
+}
+
+form#talkToUsForm .form-group {
+  margin-bottom: 0;
+}
+
+form#talkToUsForm .form-group p {
+  margin-bottom: 0;
+}
+
+form#talkToUsForm .talkToUs-placeholder {
+  border-radius: 0;
+  min-height: 80px;
+  font-size: 1.2rem;
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  border: solid 3px #000;
+}
+
+form#talkToUsForm .talkToUs-placeholder::-webkit-input-placeholder {
+  color: #C4C4C4;
+  font-weight: 500;
+}
+
+form#talkToUsForm .talkToUs-placeholder::-moz-placeholder {
+  color: #C4C4C4;
+  font-weight: 500;
+}
+
+form#talkToUsForm .talkToUs-placeholder:-ms-input-placeholder {
+  color: #C4C4C4;
+  font-weight: 500;
+}
+
+form#talkToUsForm .talkToUs-placeholder:-moz-placeholder {
+  color: #C4C4C4;
+  font-weight: 500;
+}
+
+form#talkToUsForm .talkToUs-placeholder::selection {
+  background-color: #e6a3a3;
+}
+
+form#talkToUsForm .talkToUs-placeholder::moz-selection {
+  background-color: #e6a3a3;
+}
+
+form#talkToUsForm .onHovered::-webkit-input-placeholder {
+  color: #000;
+}
+
+form#talkToUsForm .onHovered:-moz-placeholder {
+  color: #000;
+}
+
+form#talkToUsForm .onHovered::-moz-placeholder {
+  color: #000;
+}
+
+form#talkToUsForm .onHovered:-ms-input-placeholder {
+  color: #000;
+}

@@ -1,0 +1,28 @@
+form#talkToUsForm{
+    .form-group{
+        margin-bottom: 0;
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .talkToUs-placeholder{
+        border-radius:0;
+        min-height: 80px;
+        font-size: 1.2rem;
+        @include default-helvetica-font;
+        border: solid 3px $black;
+        &::-webkit-input-placeholder { color: #C4C4C4; font-weight: 500; }
+        &::-moz-placeholder { color: #C4C4C4; font-weight: 500;}  
+        &:-ms-input-placeholder { color: #C4C4C4; font-weight: 500;}  
+        &:-moz-placeholder { color: #C4C4C4; font-weight: 500;}
+        &::selection{background-color:lighten($primary, 50%)};
+        &::moz-selection{background-color:lighten($primary, 50%)};
+    }
+ 
+    .onHovered{
+        &::-webkit-input-placeholder {color:$black;}  
+        &:-moz-placeholder {color: $black;}
+        &::-moz-placeholder {color: $black;}
+        &:-ms-input-placeholder {color: $black;}
+    }
+}   

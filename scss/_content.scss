@@ -1,0 +1,22 @@
+
+section#fold2-content{
+    @include background-cover;
+    background-image: url('../images/bg_motor.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    position:relative;
+        &:before{
+            @include bg-overlay;
+            background:$white;
+            opacity:0.6;
+        }
+        & > *{
+            @include content-z-index-overlay;
+          }
+}  
+section.jumbotron{
+    border-radius: 0;
+    background-color: $black-bg;
+}
+
