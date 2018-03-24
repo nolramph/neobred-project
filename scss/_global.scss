@@ -5,7 +5,10 @@ body {
 }
 
 p {
-  line-height: 1.75;
+  line-height: 1.375;
+}
+p,li{
+  font-size: 1rem;
 }
 
 a {
@@ -25,14 +28,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  font-weight: bold;
   @include verdana-custom;
+}
+h1{
+  font-size: 1.5rem;
+}
+h2{
+  font-size:1rem;
 }
 
 section {
   padding: 30px 0;
   h2.fold-section {
-    font-size: 1.75rem;
     margin-top: 0;
     margin-bottom: 15px;
     color: $primary;
@@ -53,6 +61,9 @@ ul.social-buttons{
     background-color: $linkedn-color;
   }
 }
+.bg-neoprimary{
+  background-color: $primary;
+} 
 
 // Button Styles
 .btn {
@@ -133,10 +144,12 @@ img::-moz-selection {
 }
 
 @media(min-width:992px){
+  h2{
+    font-size: 2.25rem;
+  }
   section {
     padding: 50px 0;
     h2.fold-section {
-      font-size: 1.75rem;
       margin-top: 0;
       margin-bottom: 15px;
       color: $primary;
@@ -144,5 +157,8 @@ img::-moz-selection {
   }
   .custom-w100{
     @include w-50;
+  }
+  li, p{
+    font-size: 1.25rem;
   }
 }

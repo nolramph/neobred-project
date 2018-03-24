@@ -1,10 +1,14 @@
 body {
   overflow-x: hidden;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
 p {
-  line-height: 1.75;
+  line-height: 1.375;
+}
+
+p, li {
+  font-size: 1rem;
 }
 
 a {
@@ -25,8 +29,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  font-weight: bold;
   font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
 }
 
 section {
@@ -34,7 +46,6 @@ section {
 }
 
 section h2.fold-section {
-  font-size: 1.75rem;
   margin-top: 0;
   margin-bottom: 15px;
   color: #6C1E1E;
@@ -54,6 +65,10 @@ ul.social-buttons .twitter-bg {
 
 ul.social-buttons .linkedn-bg {
   background-color: #0077b7;
+}
+
+.bg-neoprimary {
+  background-color: #6C1E1E;
 }
 
 .btn {
@@ -133,17 +148,22 @@ img::-moz-selection {
 }
 
 @media (min-width: 992px) {
+  h2 {
+    font-size: 2.25rem;
+  }
   section {
     padding: 50px 0;
   }
   section h2.fold-section {
-    font-size: 1.75rem;
     margin-top: 0;
     margin-bottom: 15px;
     color: #6C1E1E;
   }
   .custom-w100 {
     width: 50%;
+  }
+  li, p {
+    font-size: 1.25rem;
   }
 }
 
@@ -168,6 +188,10 @@ img::-moz-selection {
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #441313;
+}
+
+#mainNav .navbar-nav .nav-item {
+  font-size: 1rem;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -237,7 +261,7 @@ header.foldhead .foldhead-overlay {
 
 header.foldhead .foldhead-overlay:before {
   background: #000;
-  opacity: 0.5;
+  opacity: 0.8;
   content: '';
   position: absolute;
   top: 0;
@@ -256,7 +280,7 @@ header.foldhead .foldhead-overlay .foldhead-title {
   font-size: 1.75rem;
   line-height: 30px;
   margin-bottom: 25px;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
 header.foldhead .foldhead-overlay .foldhead-heading {
@@ -278,7 +302,7 @@ header.foldhead .foldhead-overlay .foldhead-content {
   }
   header.foldhead .foldhead-overlay .foldhead-title {
     margin-bottom: 25px;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   }
   header.foldhead .foldhead-overlay .foldhead-heading {
     font-size: 24px;
@@ -324,14 +348,14 @@ ul.social-buttons li a {
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: #212529;
+  background-color: #474747;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #6C1E1E;
 }
 
-section#fold2-content {
+section #fold2-content {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -343,7 +367,7 @@ section#fold2-content {
   position: relative;
 }
 
-section#fold2-content:before {
+section #fold2-content:before {
   content: '';
   position: absolute;
   top: 0;
@@ -355,14 +379,38 @@ section#fold2-content:before {
   opacity: 0.6;
 }
 
-section#fold2-content > * {
+section #fold2-content > * {
   position: relative;
   z-index: 1;
 }
 
-section.jumbotron {
+section .jumbotron {
   border-radius: 0;
   background-color: #373737;
+}
+
+section ul.custom-ul {
+  width: 100%;
+  margin: auto;
+}
+
+section ul.custom-ul li {
+  line-height: 1.75;
+}
+
+section p, section li {
+  color: #474747;
+}
+
+section .mv p, section .mv h2 {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  section ul.custom-ul,
+  section .mv p {
+    padding: 0 25%;
+  }
 }
 
 form#talkToUsForm .form-group {

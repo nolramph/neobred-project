@@ -1,5 +1,6 @@
 
-section#fold2-content{
+section{
+    #fold2-content{
     @include background-cover;
     background-image: url('../images/bg_motor.jpg');
     background-repeat: no-repeat;
@@ -14,9 +15,35 @@ section#fold2-content{
         & > *{
             @include content-z-index-overlay;
           }
-}  
-section.jumbotron{
-    border-radius: 0;
-    background-color: $black-bg;
+    }
+    .jumbotron{
+        border-radius: 0;
+        background-color: $black-bg;
+    }
+    ul.custom-ul{
+        width:100%;
+        margin: auto;
+        li{
+            line-height: 1.75;
+        }
+    }
+    p, li{
+        color: $gray-900;
+    }
+    .mv{
+        p, h2{
+            color: $white;   
+        }
+    } 
+}    
+ 
+@media (min-width:992px){
+    section{
+        ul.custom-ul,
+        .mv p{
+            padding:0 25%;
+        }
+    }
+     
 }
-
+ 
